@@ -1,0 +1,22 @@
+<div class="login-container">
+    <h2>Iniciar Sesión</h2>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Correo Electrónico</mat-label>
+        <input matInput placeholder="Correo Electrónico...">
+        <mat-icon matSuffix>alternate_email</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput placeholder="Contraseña" type="password">
+        <mat-icon matSuffix>lock</mat-icon>
+    </mat-form-field>
+
+    <button mat-button mat-flat-button color="primary" class="full-width">
+        <mat-icon>save</mat-icon>
+        Ingresar
+    </button>
+
+    <a routerLink="/auth/new-account">Crear Cuenta</a>
+</div>
