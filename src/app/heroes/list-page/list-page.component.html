@@ -1,5 +1,10 @@
-<ul>
-    @for (heroe of heroes; track $index) {
-    <li> {{heroe.superhero}} </li>
+<h1>Listado de Héroes</h1>
+<mat-divider></mat-divider>
+
+<mat-grid-list cols="4" rowHeight="2:1" gutterSize="16px">
+    @for ( heroe of heroes; track $index) {
+    <mat-grid-tile>
+        <heroes-heroe-card [heroe]="heroe"></heroes-heroe-card>
+    </mat-grid-tile>
     }
-</ul>
+</mat-grid-list>
